@@ -17,16 +17,16 @@ settings:
 monitors:
   - id: workers-cloudflare-com # unique identifier
     name: Main entrance(CN)
-    description: 'Official entrance for China Mainland users ' # default=empty
+    description: 'Official entrance for China Mainland users' # default=empty
     url: 'https://www.weipien.club/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: Main entrance(Global)
-    name: www.vpn.taxi
-    description: 'Built for anything connected to the Internet.'
+  - id: Main-entrance
+    name: Main entrance(Global)
+    description: 'Permanet entrance for global users'
     url: 'https://www.vpn.taxi'
     method: GET
     expectStatus: 200
@@ -34,6 +34,7 @@ monitors:
 
   - id: Subscription-aa
     name: Subscription API Gateway
+    description: 'Monitor for the node subscription link'
     url: 'https://clashcat.clashcat.workers.dev/'
     method: GET
     expectStatus: 200
