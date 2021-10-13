@@ -30,10 +30,11 @@ monitors:
     url: 'https://www.vpn.taxi'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: Subscription-aa
     name: Subscription API Gateway
     url: 'https://clashcat.clashcat.workers.dev/'
     method: GET
     expectStatus: 200
+    linkable: false
